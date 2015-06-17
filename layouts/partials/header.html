@@ -1,0 +1,11 @@
+{{ "<!-- Header section -->" | safeHTML }}
+<header id="header">
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <h1><span>{{ with .Site.Params.header.title }}{{ . }}{{ end }}</span></h1>
+    <p class="kicker">{{ with .Site.Params.header.shortBio }}{{ . }}{{ end }}</p>
+</header>
