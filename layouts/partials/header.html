@@ -1,10 +1,10 @@
 {{ "<!-- Header section -->" | safeHTML }}
 <header id="header">
     <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#work">Work</a>
-        <a href="#clients">Clients</a>
-        <a href="#contact">Contact</a>
+        <a href="#about-me">{{ with .Site.Params.about.title }}{{ . }}{{ end }}</a>
+        <a href="#work">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</a>
+        <a href="#clients">{{ with .Site.Params.clients.title }}{{ . }}{{ end }}</a>
+        <a href="#contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</a>
     </nav>
     <h1><span>{{ with .Site.Params.header.title }}{{ . }}{{ end }}</span></h1>
     <p class="kicker">{{ with .Site.Params.header.shortBio }}{{ . }}{{ end }}</p>
