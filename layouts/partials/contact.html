@@ -1,0 +1,11 @@
+{{ "<!-- Contact section -->" | safeHTML }}
+<section class="alt-section section-contact">
+    <h3 id="contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</h3>
+    <div class="social-links">
+        {{ range .Site.Params.contact.social }}
+        <a href="{{ .link }}" class="icon-{{ .icon }}"></a>
+        {{ end }}
+    </div>
+    <hr class="bar">
+    <a class="biglink" href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+</section>
