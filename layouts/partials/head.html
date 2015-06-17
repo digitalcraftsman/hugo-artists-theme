@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
+<meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
+<meta name="generator" content="{{ .Hugo.Generator }}" />
+<title>{{ .Site.Title }}</title>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.css">
+{{ "<!--[if lt IE 9]>" | safeHTML }}
+	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+{{ "<![endif]-->" | safeHTML }}
