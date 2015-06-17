@@ -203,35 +203,9 @@
 	{{ partial "clients.html" . }}
 	{{ partial "contact.html" . }}
 	{{ partial "form.html" . }}
+	{{ partial "footer.html" . }}
 
-
-
-<footer id="footer">
-
-  <div class="lockup">
-    
-    <div class="content-wrap">
-      <nav>
-        
-          <a href="#about-me">About Me</a>
-        
-          <a href="#work">Work</a>
-        
-          <a href="#clients">Clients</a>
-        
-          <a href="#contact">Contact</a>
-        
-      </nav>
-      
-      <p class="copyright">All content copyright 2015</p>
-    </div>
-    
-  </div>
-
-</footer>
-
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/functions.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="{{ .Site.BaseURL }}js/functions.js"></script>
 </body>
 </html>
