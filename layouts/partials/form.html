@@ -1,0 +1,20 @@
+{{ "<!-- Form section -->" | safeHTML }}
+<section>
+    <h3>{{ with .Site.Params.form.title }}{{ . }}{{ end }}</h3>
+    <form method="POST" action="//formspree.io/{{ with .Site.Params.email }}{{ . }}{{ end }}">
+        <fieldset class="contact-info-group">
+            <label><span>{{ with .Site.Params.form.name }}{{ . }}{{ end }}</span>
+                <input type="text" name="name">
+            </label>
+            <label><span>{{ with .Site.Params.form.email }}{{ . }}{{ end }}</span>
+                <input type="email" name="_replyto">
+            </label>
+        </fieldset>
+        <label><span>{{ with .Site.Params.form.message }}{{ . }}{{ end }}</span>
+            <textarea name="message"></textarea>
+        </label>
+        <fieldset class="submit-wrap">
+            <input type="submit" value="{{ with .Site.Params.form.buttonText }}{{ . }}{{ end }}">
+        </fieldset>
+    </form>
+</section>
