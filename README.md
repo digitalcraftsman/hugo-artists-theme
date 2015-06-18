@@ -44,9 +44,11 @@ Furthermore, you can show your visitors your skills and capabilities. Add as man
 
 ```toml
 [[params.about.skills]]
-	name = "Communication"
-	value = 9
+   name = "Communication"
+   value = 9
 ```
+
+To rate your skill level, use a value between 0 and 10.
 
 
 ### Introduce youself
@@ -59,10 +61,6 @@ In the next step, replace the image of Travis in the about section with one of y
 Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml), there is another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples/work) which hosts the files that will appear as your projects in the work section. Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/examples/work/proj-1.md) written in Markdown:
 
 ```markdown
-+++
-title = "Typo International Design Talks Stuff"
-+++
-
 ![Typo International](img/work/proj-1/img1.jpg)
 
 TYPO: International Design Talks is an annual event held in Berlin, London, and San Francisco. This promotional project is developed to market the event for the designindustry. The use of patterns, sophisticated color scheme and typography are applied for the print and mobile application.
@@ -72,6 +70,8 @@ TYPO: International Design Talks is an annual event held in Berlin, London, and 
 ![Typo International](img/work/proj-1/img4.jpg)
 ![Typo International](img/work/proj-1/img5.jpg)
 ```
+
+
 
 
 ### Make the contact form working

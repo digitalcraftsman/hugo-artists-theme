@@ -1,8 +1,8 @@
 <section class="alt-section section-work">
-    <h3 id="work">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</h3> 
+    <h3 id="work">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</h3>
 
     {{ range .Site.Params.work.projects }}
-    <input type="radio" name="trigger" class="trigger" id="{{ .folder }}" /> 
+    <input type="radio" name="trigger" class="trigger" id="{{ .folder }}" />
     {{ end }}
     <input type="radio" name="trigger" id="return" class="return" />
     <div class="work-belt">
@@ -31,9 +31,6 @@
                     {{ range .Site.Params.work.projects }}
                     <div class="noscript" id="content-{{ .folder }}">
                         <h4 class="project-title">{{ .name }}</h4>
-                        <div class="noscript-load">
-                            <!-- .file . -->
-                        </div>
                     </div>
                     {{ end }}
                 </noscript>
