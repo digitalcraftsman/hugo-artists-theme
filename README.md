@@ -4,13 +4,81 @@ The Artists Theme is a one page portfolio for freelancers based on the original 
 
 This Hugo theme features several content sections, like an about section  showing the level of your skills, a responsive portfolio hover effects, a gallery to present your client's opinions and a contact form.
 
+![Hugo Artists Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/images/screenshot.png)
+
+
 ## Contents
+
+
+## Installation
+
+Inside the folder of your Hugo site run:
+
+    $ mkdir themes
+    $ cd themes
+    $ git clone https://github.com/digitalcraftsman/hugo-artists-theme
+
+For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
+
+
+## Getting started
+
+After installing the Artists Theme successfully it requires a just a few more steps to get your site running.
+
+
+### The config file
+
+Take a look inside the [`examples`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml). To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+
+
+### Change the hero background
+
+The hero acts as an eye-catcher for your site. So consider to give him a nice background. You just need to replace the [`hero-bg.jpg`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/hero-bg.jpg) at [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img) with your own background image. But it's important that you keep the original filename.
+
+
+### Add your own logo
+
+Go to [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img) and replace the [`logo.svg`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/logo.svg) with your own file. If you don't want to use an svg you also need to change the source name  inside the [`all.css`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/css/all.css) stylesheet [`here`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/css/all.css#L614) and [`here`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/css/all.css#L662).
+
+Furthermore, you can show your visitors your skills and capabilities. Add as many skills as you like to the configs by copying the snippet below:
+
+```toml
+[[params.about.skills]]
+	name = "Communication"
+	value = 9
+```
+
+
+### Introduce youself
+
+In the next step, replace the image of Travis in the about section with one of yours. Therefore search the ['avatar.jpg'](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/avatar.jpg) under [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img). 
+
+
+### Create your portfolio
+
+Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml), there is another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples/work) which hosts the files that will appear as your projects in the work section. Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/examples/work/proj-1.md) written in Markdown:
+
+```markdown
++++
+title = "Typo International Design Talks Stuff"
++++
+
+![Typo International](img/work/proj-1/img1.jpg)
+
+TYPO: International Design Talks is an annual event held in Berlin, London, and San Francisco. This promotional project is developed to market the event for the designindustry. The use of patterns, sophisticated color scheme and typography are applied for the print and mobile application.
+
+![Typo International](img/work/proj-1/img2.jpg)
+![Typo International](img/work/proj-1/img3.jpg)
+![Typo International](img/work/proj-1/img4.jpg)
+![Typo International](img/work/proj-1/img5.jpg)
+```
+
 
 ### Make the contact form working
 
 Since this page will be static, you can use [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Begin the setup by following the steps below:
 
-1. Enter your email address under 'email' in the [`config.toml`]()
+1. Enter your email address under 'email' in the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml)
 2. Upload the generated site to your server
 3. Send a dummy email yourself to confirm your account
 4. Click the confirm link in the email from [formspree.io](//formspree.io/)
