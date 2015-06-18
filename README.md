@@ -1,13 +1,28 @@
 # Artists Theme
 
-The Artists Theme is a one page portfolio for freelancers based on the original [Jekyll theme](//github.com/DevTips/Artists-Theme) by [Travis Neilson](//github.com/travisneilson) aka [DevTips](//www.youtube.com/user/DevTipsForDesigners) and the many contributors. It's the result of a longer [video series](//www.youtube.com/watch?v=T6jKLsxbFg4&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI) made by him that is showing the hole developement process from the first designs to the final Jekyll theme. Consider to subscribe to his [YouTube channel](//www.youtube.com/user/DevTipsForDesigners).
+The Artists Theme is a one page portfolio for freelancers based on the original [Jekyll theme](//github.com/DevTips/Artists-Theme) by [Travis Neilson](//github.com/travisneilson) aka [DevTips](//www.youtube.com/user/DevTipsForDesigners) and his many contributors. It's the result of a longer [video series](//www.youtube.com/watch?v=T6jKLsxbFg4&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI) made by him that is showing the hole developement process from the first designs to the final Jekyll theme. Consider to subscribe to his [YouTube channel](//www.youtube.com/user/DevTipsForDesigners).
 
-This Hugo theme features several content sections, like an about section  showing the level of your skills, a responsive portfolio hover effects, a gallery to present your client's opinions and a contact form.
+This Hugo theme features several content sections, like an about section  showing the level of your skills, a responsive portfolio with hover effects, a gallery to present your client's opinions and a contact form.
 
 ![Hugo Artists Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/images/screenshot.png)
 
 
 ## Contents
+
+- [Installation](#installation)
+- [Getting started](#getting-started)
+    - [The config file](#the-config-file) 
+    - [Change the hero background](#change-the-hero-background)
+    - [Add your own logo](#add-your-own-logo)
+    - [Introduce yourself](#introduce-yourself)
+    - [Create your portfolio](#create-your-portfolio)
+    - [What your clients think](#what-your-clients-think)
+    - [Add social networks](#add-social-networks)
+    - [Make the contact form working](#make-the-contact-form-working)
+    - [Nearly finished](#nearly-finished)
+- [Contributing](#contributing)
+- [License](#license)
+- [Annotations](#annotations)
 
 
 ## Installation
@@ -23,12 +38,12 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Getting started
 
-After installing the Artists Theme successfully it requires a just a few more steps to get your site actually running.
+After installing the Artists Theme successfully it requires a just a few more steps to get your site finally running.
 
 
 ### The config file
 
-Take a look inside the [`examples`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml). To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+Take a look inside the [`examples`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples) folder of this theme. You'll find a file called [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml). To use it, copy the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) in the root folder of your Hugo site. Feel free to customize this theme as you like.
 
 
 ### Change the hero background
@@ -40,7 +55,12 @@ The hero acts as an eye-catcher for your site. So consider to give him a nice ba
 
 Go to [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img) and replace the [`logo.svg`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/logo.svg) with your own file. If you don't want to use an svg you also need to change the source name  inside the [`all.css`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/css/all.css) stylesheet [`here`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/css/all.css#L614) and [`here`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/css/all.css#L662).
 
-Furthermore, you can show your visitors your skills and capabilities. Add as many skills as you like to the configs by copying the snippet below:
+
+### Introduce yourself
+
+In the next step, replace the image of Travis in the about section with one of yours. Therefore search the [`avatar.jpg`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/avatar.jpg) under [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img). But keep the original filename here too.
+
+Furthermore, you can show your visitors your skills and capabilities. Add as many skills as you like by copying the snippet below:
 
 ```toml
 [[params.about.skills]]
@@ -49,11 +69,6 @@ Furthermore, you can show your visitors your skills and capabilities. Add as man
 ```
 
 To rate your skill level, use a value between 0 and 10.
-
-
-### Introduce youself
-
-In the next step, replace the image of Travis in the about section with one of yours. Therefore search the [`avatar.jpg`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/avatar.jpg) under [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img). 
 
 
 ### Create your portfolio
@@ -83,12 +98,12 @@ TYPO: International Design Talks is an annual event held in Berlin, London, and 
 ![Typo International](img/work/proj-1/img5.jpg)
 ```
 
-The paths to your images are relative to the base url. Store those under [`static/img/work/<folder>/`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/work). `<folder>` is a the attribute from the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) that you defined for the images. Create at least a `thumb.jpg` for a preview in the portfolio grid.
+The paths to your images are relative to the base url. Store those under [`static/img/work/<folder>/`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/work). `<folder>` is a the attribute from the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) that you defined for the images above. Create at least a `thumb.jpg` for the preview in the portfolio grid.
 
 
 ### What your clients think
 
-For a new quote, copy the códe below into you [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml):
+For a new quote, copy the code below into your [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml):
 
 ```toml
 [[params.clients.list]]
@@ -150,7 +165,8 @@ This theme is released under the Unlincense License. For more information read t
 
 ## Annotations
 
-A big thank you to these creators for contributing sample projects for the "work" section:_
+A big thank you to these creators for contributing sample projects for the "work" section:
+
 - [Micael Butial](//www.behance.net/gallery/14751131/-TYPO-International-Design-Talks)
 - [Petras Nargėla](//www.behance.net/gallery/16750837/Free-80-Crispy-Icons-in-PSD-AI-SVG-Webfont)
 - [Sergey Valiukh](//www.behance.net/gallery/13745729/Timeline-Page)
@@ -160,4 +176,4 @@ A big thank you to these creators for contributing sample projects for the "work
 - [Jonathan Quintin](//www.behance.net/gallery/12748107/Weather-Dashboard-Global-Outlook-UIUX)
 - [Jieyu Xiong](//www.behance.net/gallery/15063575/Fresh-It-Up-App-Design)
 
-Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
+Also thanks to [Steve Francia](//github.com/spf13) for creating [Hugo](//gohugo.io) and the awesome community around the project.
