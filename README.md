@@ -23,7 +23,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Getting started
 
-After installing the Artists Theme successfully it requires a just a few more steps to get your site running.
+After installing the Artists Theme successfully it requires a just a few more steps to get your site actually running.
 
 
 ### The config file
@@ -53,12 +53,24 @@ To rate your skill level, use a value between 0 and 10.
 
 ### Introduce youself
 
-In the next step, replace the image of Travis in the about section with one of yours. Therefore search the ['avatar.jpg'](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/avatar.jpg) under [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img). 
+In the next step, replace the image of Travis in the about section with one of yours. Therefore search the [`avatar.jpg`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/static/img/avatar.jpg) under [`static/img`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img). 
 
 
 ### Create your portfolio
 
-Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml), there is another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples/work) which hosts the files that will appear as your projects in the work section. Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/examples/work/proj-1.md) written in Markdown:
+Adding a new project is very simple. Firstly, you need to define a new project in your [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) with the following code snippet:
+
+```toml
+[[params.work.projects]]
+    name   = "TYPO International Design Talks"
+    folder = "proj-1"
+```
+
+The `folder` attribute defines a project-specific subfolder for your images. You will use it at the end of this section.
+
+Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml), there is another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/examples/work) which hosts the files that will appear as your projects in the work section. Copy the whole folder into the `content` directory at the root of your Hugo site.
+
+Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/examples/work/proj-1.md) written in Markdown:
 
 ```markdown
 ![Typo International](img/work/proj-1/img1.jpg)
@@ -71,7 +83,39 @@ TYPO: International Design Talks is an annual event held in Berlin, London, and 
 ![Typo International](img/work/proj-1/img5.jpg)
 ```
 
+The paths to your images are relative to the base url. Store those under [`static/img/work/<folder>/`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/work). `<folder>` is a the attribute from the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml) that you defined for the images. Create at least a `thumb.jpg` for a preview in the portfolio grid.
 
+
+### What your clients think
+
+For a new quote, copy the códe below into you [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/examples/config.toml):
+
+```toml
+[[params.clients.list]]
+      avatar = "face-teleject.jpg"
+      name   = "Cleatus Cassidy"
+      title  = "VP of Helmut, Lorem Sorem LLC."
+      quote  = "**Back in old country** only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework."
+      logo   = "logo4.png"
+```
+
+Store both the client's avatar and logo at [`static/img/clients`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/clients)
+
+
+### Add social networks
+
+You can link some of your social networks in this theme too. Therefore copy the this snippet:
+
+```toml
+[[params.contact.social]]
+      icon = "twitter"
+      link = "//twitter.com/devtipsshow"
+```
+
+The following social network icons are available: 
+
+`twitter`, `facebook`, `github`, `pinterest` `google-plus`, `linkedin` 
+`youtube`, `instagram`, `dribbble`, `behance`, `soundcloud` and `vine`.
 
 
 ### Make the contact form working
@@ -106,14 +150,14 @@ This theme is released under the Unlincense License. For more information read t
 
 ## Annotations
 
-_A big thank you to these creators for contributing sample projects for the "work" section:_
-- [Micael Butial](https://www.behance.net/gallery/14751131/-TYPO-International-Design-Talks)
-- [Petras Nargėla](https://www.behance.net/gallery/16750837/Free-80-Crispy-Icons-in-PSD-AI-SVG-Webfont)
-- [Sergey Valiukh](https://www.behance.net/gallery/13745729/Timeline-Page)
-- [Ayoub Elred](https://www.behance.net/gallery/15812143/Flat-Mobile-UIUX-Concept-download)
-- [Anton Skvortsov](https://www.behance.net/gallery/16483395/City-IN-website-concept)
-- [Nick Zoutendijk](https://www.behance.net/gallery/13870569/Stripes-Co-Free-icon-Set)
-- [Jonathan Quintin](https://www.behance.net/gallery/12748107/Weather-Dashboard-Global-Outlook-UIUX)
-- [Jieyu Xiong](https://www.behance.net/gallery/15063575/Fresh-It-Up-App-Design)
+A big thank you to these creators for contributing sample projects for the "work" section:_
+- [Micael Butial](//www.behance.net/gallery/14751131/-TYPO-International-Design-Talks)
+- [Petras Nargėla](//www.behance.net/gallery/16750837/Free-80-Crispy-Icons-in-PSD-AI-SVG-Webfont)
+- [Sergey Valiukh](//www.behance.net/gallery/13745729/Timeline-Page)
+- [Ayoub Elred](//www.behance.net/gallery/15812143/Flat-Mobile-UIUX-Concept-download)
+- [Anton Skvortsov](//www.behance.net/gallery/16483395/City-IN-website-concept)
+- [Nick Zoutendijk](//www.behance.net/gallery/13870569/Stripes-Co-Free-icon-Set)
+- [Jonathan Quintin](//www.behance.net/gallery/12748107/Weather-Dashboard-Global-Outlook-UIUX)
+- [Jieyu Xiong](//www.behance.net/gallery/15063575/Fresh-It-Up-App-Design)
 
 Thanks to [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
