@@ -1,7 +1,3 @@
-+++
-title = "Weather Dashboard"
-+++
-
 ![Weather Dashboard](img/work/proj-7/img0.jpg)
 ![Weather Dashboard](img/work/proj-7/img1.jpg)
 ![Weather Dashboard](img/work/proj-7/img2.jpg)

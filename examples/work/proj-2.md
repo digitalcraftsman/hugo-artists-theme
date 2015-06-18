@@ -1,5 +1,1 @@
-	+++
-	title = "City In Website Concept"
-	+++
-
-	![City In](img/work/proj-2/CityIn-AntonSkvortsov.jpg)
+![City In](img/work/proj-2/CityIn-AntonSkvortsov.jpg)
