@@ -1,0 +1,189 @@
+# Site settings
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "Hugo Artists Theme"
+theme = "hugo-artists-theme"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Your name"
+	description = "Your description"
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 email each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	email = "your@email.com"
+
+
+	# Header an navigation
+	#
+	# To change the header background the 'hero-bg-jpg' at 'static/img'.
+	# Do the same with the logo ('logo.svg').
+	# But keep the original filename!
+	[params.header]
+		title = "Artists Theme"
+		shortBio = "Thinker // Designer // YouTuber"
+
+
+	# About section
+	#
+	# Replace the 'avatar.jpg' under 'static/img' with your own image.
+	[params.about]
+		title = "About me"
+		bio = "**Travis specializes in making things** for human people. Most of the things he makes are [digital interfaces](//travisneilson.com/), but he also puts effort into crafting [next-level beats](//soundcloud.com/travis-neilson) and [YouTube videos](//youtube.com/user/devtipsfordesigners) about making codes happen."
+
+		[[params.about.skills]]
+			name = "Communication"
+			value = 9
+
+		[[params.about.skills]]
+			name = "Organization"
+			value = 7
+
+		[[params.about.skills]]
+			name = "Learning"
+			value = 10
+
+		[[params.about.skills]]
+			name = "Teaching"
+			value = 6
+
+		[[params.about.skills]]
+			name = "Planning"
+			value = 7
+
+		[[params.about.skills]]
+			name = "Visual Design"
+			value = 5
+
+		[[params.about.skills]]
+			name = "UX Design"
+			value = 8
+
+		[[params.about.skills]]
+			name = "Programming"
+			value = 6
+
+	# Work section
+	[params.work]
+		title = "Work"
+
+		[[params.work.projects]]
+			name = "TYPO International Design Talks"
+			folder = "proj-1"
+			file = "work/proj-1.html"
+		[[params.work.projects]]
+			name = "City-IN website concept"
+			folder = "proj-2"
+			file = "work/proj-2.html"
+		[[params.work.projects]]
+			name = "Crispy Icons"
+			folder = "proj-3"
+			file = "work/proj-3.html"
+		[[params.work.projects]]
+			name = "Flat Mobile UI/UX Concept"
+			folder = "proj-4"
+			file = "work/proj-4.html"
+		[[params.work.projects]]
+			name = "Fresh It Up"
+			folder = "proj-5"
+			file = "work/proj-5.html"
+		[[params.work.projects]]
+			name = "Timeline Page"
+			folder = "proj-6"
+			file = "work/proj-6.html"
+		[[params.work.projects]]
+			name = "Weather Dashboard"
+			folder = "proj-7"
+			file = "work/proj-7.html"
+		[[params.work.projects]]
+			name = "Stripes & Co"
+			folder = "proj-8"
+			file = "work/proj-8.html"
+
+
+	# Clients section
+	[params.clients]
+		title = "Clients"
+
+		[[params.clients.list]]
+			avatar = "face-aaroni.jpg"
+			name   = "Scott Summers"
+			title  = "Director of Design, OnToText Ind."
+			quote  = "**While we all felt that Travis was a great** asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often."
+			logo   = "logo1.png"
+
+		[[params.clients.list]]
+			avatar = "face-atariboy.jpg"
+			name   = "Hank McCoy"
+			title  = "Eater of Salad, Antartica Int."
+			quote  = "**Working with Travis was the highlight of my career.** Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying \"uh huh, and then what?\" 30 times in a row to my girlfriend without her noticing."
+			logo   = "logo2.png"
+
+		[[params.clients.list]]
+			avatar = "face-jackiesaik.jpg"
+			name   = "Stacy Lang"
+			title  = "Social Media Girl, Quebec Int."
+			quote  = "**Yea, I guess hes good at computers or something,** but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?"
+			logo   = "logo3.png"
+
+		[[params.clients.list]]
+			avatar = "face-teleject.jpg"
+			name   = "Cleatus Cassidy"
+			title  = "VP of Helmut, Lorem Sorem LLC."
+			quote  = "**Back in old country** only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework."
+			logo   = "logo4.png"
+
+
+	# Contact secion
+	[params.contact]
+		title = "Contact"
+
+		# The following social network icons are available: 
+		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' 
+		# 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
+		[[params.contact.social]]
+			icon = "twitter"
+			link = "//twitter.com/devtipsshow"
+
+		[[params.contact.social]]
+			icon = "dribbble"
+			link = "//dribbble.com/travisneilson"
+
+		[[params.contact.social]]
+			icon = "behance"
+			link = "//www.behance.net/travisneilson"
+
+		[[params.contact.social]]
+			icon = "youtube"
+			link = "//www.youtube.com/DevTipsForDesigners"
+
+		[[params.contact.social]]
+			icon = "linkedin"
+			link = "//www.linkedin.com/in/travisneilson"
+
+
+	[params.form]
+		title = "Let's work together"
+		# Form fields
+		name = "Your Name"
+		email = "Your Email"
+		message = "Tell me about your project"
+		buttonText = "Send"
+
+
+	[params.footer]
+		copyright = "Published under the Unlicense License."
