@@ -1,6 +1,6 @@
 # Artists Theme
 
-The Artists Theme is a one page portfolio for freelancers based on the original [Jekyll theme](//github.com/DevTips/Artists-Theme) by [Travis Neilson](//github.com/travisneilson) aka [DevTips](//www.youtube.com/user/DevTipsForDesigners) and his many contributors. It's the result of a longer [video series](//www.youtube.com/watch?v=T6jKLsxbFg4&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI) made by him that is showing the hole developement process from the first designs to the final Jekyll theme. Consider to subscribe to his [YouTube channel](//www.youtube.com/user/DevTipsForDesigners).
+The Artists Theme is a one page portfolio for freelancers based on the original [Jekyll theme](//github.com/DevTips/Artists-Theme) by [Travis Neilson](//github.com/travisneilson) aka [DevTips](//www.youtube.com/user/DevTipsForDesigners) and his many contributors. It's the result of a longer [video series](//www.youtube.com/watch?v=T6jKLsxbFg4&list=PLqGj3iMvMa4KQZUkRjfwMmTq_f1fbxerI) made by him that is showing the whole developement process from the first designs to the final Jekyll theme. Consider to subscribe to his [YouTube channel](//www.youtube.com/user/DevTipsForDesigners).
 
 This Hugo theme features several content sections, like an about section  showing the level of your skills, a responsive portfolio with hover effects, a gallery to present your client's opinions and a contact form.
 
