@@ -3,10 +3,10 @@ $(function() {
 	workBelt();
 	workLoad();
 	clientStuff();
-	
+
 	$("header h1").fitText(1, { minFontSize: '20px', maxFontSize: '72px' });
 	$(".biglink").fitText(1.5);
-	
+
 	$('textarea').autosize();
 });
 
@@ -27,7 +27,7 @@ function smoothScroll (duration) {
 
 
 function workBelt() {
-  
+
   $(".trigger").remove();
   $(".return").remove();
 
@@ -35,7 +35,7 @@ function workBelt() {
     $('.work-belt').addClass("slided");
     $('.work-container').show();
   });
-  
+
   $('.work-return').click(function() {
     $('.work-belt').removeClass("slided");
     $('.work-container').hide(800);
@@ -45,68 +45,68 @@ function workBelt() {
 
 
 function  workLoad() {
-  
+
   $.ajaxSetup({ cache: true });
-  
+
   $('.thumb-container label').click(function() {
     var $this = $(this),
         newTitle = $this.find('strong').text(),
         newfolder = $this.find('.thumb-unit').data('folder'),
         spinner = '<div class="loader">Loading...</div>',
-        newHTML = 'work/'+ newfolder;
-      
+        newHTML = newfolder;
+
     $('.project-load').html(spinner).load(newHTML);
     $('.project-title').text(newTitle);
   });
-  
+
 }
 
 
 
 
 function clientStuff() {
-  
+
   $('.client-logo, .clients-mobile-nav span').click(function() {
     var $this = $(this),
         $siblings = $this.parent().children(),
         position = $siblings.index($this);
-        
+
     $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
     $siblings.removeClass('active-client');
     $this.addClass('active-client');
   });
-  
-  
+
+
   $('.client-control-next, .client-control-prev').click(function() {
-  
+
     var $this = $(this),
         curActiveClient = $('.clients-belt').find('.active-client'),
         position = $('.clients-belt').children().index(curActiveClient),
         clientNum = $('.client-unit').length;
-        
+
       if($this.hasClass('client-control-next')) {
-        
+
         if(position < clientNum -1){
           $('.active-client').removeClass('active-client').next().addClass('active-client');
         } else {
           $('.client-unit').removeClass('active-client').first().addClass('active-client');
           $('.client-logo').removeClass('active-client').first().addClass('active-client');
         }
-        
+
       } else {
-        
+
         if (position === 0) {
           $('.client-unit').removeClass('active-client').last().addClass('active-client');
           $('.client-logo').removeClass('active-client').last().addClass('active-client');
         } else {
-          $('.active-client').removeClass('active-client').prev().addClass('active-client');  
+          $('.active-client').removeClass('active-client').prev().addClass('active-client');
         }
 
       }
-        
-  
+
+
   });
-  
+
 }
 
 
@@ -249,7 +249,7 @@ function clientStuff() {
 			function setWidth() {
 				var width;
 				var style = window.getComputedStyle ? window.getComputedStyle(ta, null) : false;
-				
+
 				if (style) {
 
 					width = ta.getBoundingClientRect().width;
@@ -284,7 +284,7 @@ function clientStuff() {
 				$.each(typographyStyles, function(i,val){
 					styles[val] = $ta.css(val);
 				});
-				
+
 				$(mirror).css(styles).attr('wrap', $ta.attr('wrap'));
 
 				setWidth();
@@ -312,8 +312,8 @@ function clientStuff() {
 				}
 
 				if (!ta.value && options.placeholder) {
-					// If the textarea is empty, copy the placeholder text into 
-					// the mirror control and use that for sizing so that we 
+					// If the textarea is empty, copy the placeholder text into
+					// the mirror control and use that for sizing so that we
 					// don't end up with placeholder getting trimmed.
 					mirror.value = ($ta.attr("placeholder") || '') + options.append;
 				} else {
