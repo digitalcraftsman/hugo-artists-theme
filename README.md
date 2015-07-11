@@ -83,9 +83,9 @@ Adding a new project is very simple. Firstly, you need to define a new project i
 
 The `folder` attribute defines a project-specific subfolder for your images. You will use it at the end of this section.
 
-Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/exampleSite/config.toml), there is another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/exampleSite/work) which hosts the files that will appear as your projects in the work section. Copy the whole folder into the `content` directory at the root of your Hugo site.
+Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/exampleSite/config.toml), there is under `content` another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/exampleSite/content/work) which hosts the files that will appear as your projects in the work section. Copy the whole folder into the `content` directory at the **root** of your Hugo site.
 
-Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/exampleSite/work/proj-1.md) written in Markdown:
+Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/exampleSite/content/work/proj-1.md) written in Markdown:
 
 ```markdown
 ![Typo International](img/work/proj-1/img1.jpg)
