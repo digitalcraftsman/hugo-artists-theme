@@ -16,7 +16,7 @@ theme = "hugo-artists-theme"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
-	# email. Visitors can send up to a 1000 email each month for free.
+	# email. Visitors can send up to a 1000 emails each month for free.
     #
     # What you need to do for the setup?
     #
@@ -151,8 +151,8 @@ theme = "hugo-artists-theme"
 	[params.contact]
 		title = "Contact"
 
-		# The following social network icons are available: 
-		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' 
+		# The following social network icons are available:
+		# 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin'
 		# 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
 		[[params.contact.social]]
 			icon = "twitter"
