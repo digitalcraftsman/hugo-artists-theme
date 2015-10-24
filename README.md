@@ -11,7 +11,7 @@ This Hugo theme features several content sections, like an about section  showin
 
 - [Installation](#installation)
 - [Getting started](#getting-started)
-    - [The config file](#the-config-file) 
+    - [The config file](#the-config-file)
     - [Change the hero background](#change-the-hero-background)
     - [Add your own logo](#add-your-own-logo)
     - [Introduce yourself](#introduce-yourself)
@@ -103,15 +103,18 @@ The paths to your images are relative to the base url. Store those under [`stati
 
 ### What your clients think
 
-For a new quote, copy the code below into your [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/exampleSite/config.toml):
+For a new quote, copy the code below into your [`data/clients.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/dev/exampleSite/data/clients.toml):
 
 ```toml
-[[params.clients.list]]
-      avatar = "face-teleject.jpg"
-      name   = "Cleatus Cassidy"
-      title  = "VP of Helmut, Lorem Sorem LLC."
-      quote  = "**Back in old country** only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework."
-      logo   = "logo4.png"
+# Section title
+title = "Clients"
+
+[[list]]
+    avatar = "face-aaroni.jpg"
+    name   = "Scott Summers"
+    title  = "Director of Design, OnToText Ind."
+    quote  = "**While we all felt that Travis was a great** asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often."
+    logo   = "logo1.png"
 ```
 
 Store both the client's avatar and logo at [`static/img/clients`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/clients)
@@ -127,9 +130,9 @@ You can link some of your social networks in this theme too. Therefore copy the 
       link = "//twitter.com/devtipsshow"
 ```
 
-The following social network icons are available: 
+The following social network icons are available:
 
-`twitter`, `facebook`, `github`, `pinterest` `google-plus`, `linkedin` 
+`twitter`, `facebook`, `github`, `pinterest` `google-plus`, `linkedin`
 `youtube`, `instagram`, `dribbble`, `behance`, `soundcloud` and `vine`.
 
 
@@ -146,7 +149,7 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 
 ### Nearly finished
 
-In order to see your site in action, run Hugo's built-in local server. 
+In order to see your site in action, run Hugo's built-in local server.
 
     $ hugo server -w
 
