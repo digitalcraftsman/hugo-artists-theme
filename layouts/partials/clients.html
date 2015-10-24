@@ -1,9 +1,9 @@
 {{ "<!-- Clients section -->" | safeHTML }}
 <section class="section-clients">
-    <h3 id="clients">{{ with .Site.Params.clients.title }}{{ . }}{{ end }}</h3>
+    <h3 id="clients">{{ with .Site.Data.clients.title }}{{ . }}{{ end }}</h3>
 
     <div class="clients-mobile-nav">
-    {{ range $i, $e := .Site.Params.clients.list }}
+    {{ range $i, $e := .Site.Data.clients.list }}
 	    {{ if eq $i 0 }}
 	    <span class="active-client"></span>
 	    {{ else }}
@@ -13,7 +13,7 @@
     </div>
 
     <div class="clients-belt">
-    {{ range $i, $e := .Site.Params.clients.list }}
+    {{ range $i, $e := .Site.Data.clients.list }}
     <div class="client-unit {{ if eq $i 0 }}active-client{{ end }}">   <!-- CONDITIONAL CSS CLASS -->
         <figure class="client-face">
             <img src="img/clients/{{ .avatar }}" alt="client-face">
@@ -36,11 +36,11 @@
     </div>
 
     <div class="clients-logos">
-    {{ range $i, $e := .Site.Params.clients.list }}
+    {{ range $i, $e := .Site.Data.clients.list }}
       	{{ if eq $i 0 }}
-       	<img class="client-logo active-client" src="img/clients/{{ .logo }}" align="{{ .logo }}"> 
-		{{ else }}	
-    	<img class="client-logo" src="img/clients/{{ .logo }}" align="{{ .logo }}"> 
+       	<img class="client-logo active-client" src="img/clients/{{ .logo }}" align="{{ .logo }}">
+		{{ else }}
+    	<img class="client-logo" src="img/clients/{{ .logo }}" align="{{ .logo }}">
        	{{ end }}
     {{ end }}
     </div>

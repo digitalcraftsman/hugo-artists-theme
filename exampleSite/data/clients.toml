@@ -1,0 +1,30 @@
+# Section title
+title = "Clients"
+
+[[list]]
+    avatar = "face-aaroni.jpg"
+    name   = "Scott Summers"
+    title  = "Director of Design, OnToText Ind."
+    quote  = "**While we all felt that Travis was a great** asset to our team — and really worked hard to understand our products from the point of view of the customer — we also all agree he should shower more often."
+    logo   = "logo1.png"
+
+[[list]]
+    avatar = "face-atariboy.jpg"
+    name   = "Hank McCoy"
+    title  = "Eater of Salad, Antartica Int."
+    quote  = "**Working with Travis was the highlight of my career.** Other moments of note were collecting the largest number of paperclips in the office, and winning a trophy for saying \"uh huh, and then what?\" 30 times in a row to my girlfriend without her noticing."
+    logo   = "logo2.png"
+
+[[list]]
+    avatar = "face-jackiesaik.jpg"
+    name   = "Stacy Lang"
+    title  = "Social Media Girl, Quebec Int."
+    quote  = "**Yea, I guess hes good at computers or something,** but let me ask you this: If a cat always lands on its feet, and buttered bread always lands butter side down, what would happen if you tied buttered bread on top of a cat?"
+    logo   = "logo3.png"
+
+[[list]]
+    avatar = "face-teleject.jpg"
+    name   = "Cleatus Cassidy"
+    title  = "VP of Helmut, Lorem Sorem LLC."
+    quote  = "**Back in old country** only nerds who is playing on computers. Now all bros is wanting to make codes and junk. I lost foot in war. You dont see girls asking me about homework."
+    logo   = "logo4.png"
