@@ -73,17 +73,20 @@ To rate your skill level, use a value between 0 and 10.
 
 ### Create your portfolio
 
-Adding a new project is very simple. Firstly, you need to define a new project in your [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/exampleSite/config.toml) with the following code snippet:
+Adding a new project is very simple. Firstly, you need to define a new project in your [`data/work.toml`](https://github.com/digitalcraftsman/hugo-artists-theme/blob/dev/exampleSite/data/work.toml) with the following code snippet:
 
 ```toml
-[[params.work.projects]]
-    name   = "TYPO International Design Talks"
+# Section title
+title = "Work"
+
+[[projects]]
+    name = "TYPO International Design Talks"
     folder = "proj-1"
 ```
 
 The `folder` attribute defines a project-specific subfolder for your images. You will use it at the end of this section.
 
-Beside the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/exampleSite/config.toml), there is under `content` another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/exampleSite/content/work) which hosts the files that will appear as your projects in the work section. Copy the whole folder into the `content` directory at the **root** of your Hugo site.
+Beside the [`data/work.toml`](https://github.com/digitalcraftsman/hugo-artists-theme/blob/dev/exampleSite/data/work.toml), there is under `content` another subfolder called [`work`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/exampleSite/content/work) which hosts the files that will appear as your projects in the work section. Copy the whole folder into the `content` directory at the **root** of your Hugo site.
 
 Such a project file might look like [this one](//raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/exampleSite/content/work/proj-1.md) written in Markdown:
 
@@ -98,7 +101,7 @@ TYPO: International Design Talks is an annual event held in Berlin, London, and 
 ![Typo International](img/work/proj-1/img5.jpg)
 ```
 
-The paths to your images are relative to the base url. Store those under [`static/img/work/<folder>/`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/work). `<folder>` is a the attribute from the [`config.toml`](//github.com/digitalcraftsman/hugo-artists-theme/blob/master/exampleSite/config.toml) that you defined for the images above. Create at least a `thumb.jpg` for the preview in the portfolio grid.
+The paths to your images are relative to the base url. Store those under [`static/img/work/<folder>/`](//github.com/digitalcraftsman/hugo-artists-theme/tree/master/static/img/work). `<folder>` is a the attribute from the [`data/work.toml`](https://github.com/digitalcraftsman/hugo-artists-theme/blob/dev/exampleSite/data/work.toml) that you defined for the images above. Create at least a `thumb.jpg` for the preview in the portfolio grid.
 
 
 ### What your clients think
