@@ -2,7 +2,7 @@
 <header id="header">
     <nav>
         <a href="#about-me">{{ with .Site.Params.about.title }}{{ . }}{{ end }}</a>
-        <a href="#work">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</a>
+        <a href="#work">{{ with .Site.Data.work.title }}{{ . }}{{ end }}</a>
         <a href="#clients">{{ with .Site.Params.clients.title }}{{ . }}{{ end }}</a>
         <a href="#contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</a>
     </nav>
