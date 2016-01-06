@@ -1,6 +1,6 @@
 {{ "<!-- Clients section -->" | safeHTML }}
 <section class="section-clients">
-    <h3 id="clients">{{ with .Site.Data.clients.title }}{{ . }}{{ end }}</h3>
+    {{ with .Site.Data.clients.title }}<h3 id="clients">{{ . }}</h3>{{ end }}
 
     <div class="clients-mobile-nav">
     {{ range $i, $e := .Site.Data.clients.list }}

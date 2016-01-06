@@ -1,6 +1,6 @@
 {{ "<!-- Contact section -->" | safeHTML }}
 <section class="alt-section section-contact">
-    <h3 id="contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</h3>
+    {{ with .Site.Params.contact.title }}<h3 id="contact">{{ . }}</h3>{{ end }}
     <div class="social-links">
         {{ range .Site.Params.contact.social }}
         <a href="{{ .link }}" class="icon-{{ .icon }}"></a>

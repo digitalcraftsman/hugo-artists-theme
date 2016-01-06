@@ -3,10 +3,10 @@
     <div class="lockup">
         <div class="content-wrap">
             <nav>
-                <a href="#about-me">{{ with .Site.Params.about.title }}{{ . }}{{ end }}</a>
-                <a href="#work">{{ with .Site.Data.work.title }}{{ . }}{{ end }}</a>
-                <a href="#clients">{{ with .Site.Params.clients.title }}{{ . }}{{ end }}</a>
-                <a href="#contact">{{ with .Site.Params.contact.title }}{{ . }}{{ end }}</a>
+                {{ with .Site.Params.about.title }}<a href="#about-me">{{ . }}</a>{{ end }}
+                {{ with .Site.Data.work.title }}<a href="#work">{{ . }}</a>{{ end }}
+                {{ with .Site.Params.clients.title }}<a href="#clients">{{ . }}</a>{{ end }}
+                {{ with .Site.Params.contact.title }}<a href="#contact">{{ . }}</a>{{ end }}
             </nav>
             <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . }}{{ else }}All content copyright {{.Now.Format "2006"}} {{ end }}</p>
         </div>

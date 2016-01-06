@@ -1,7 +1,7 @@
 {{ "<!-- About section -->" | safeHTML }}
 <section>
-    <h3 id="about-me">{{ with .Site.Params.about.title }}{{ . }}{{ end }}</h3>
-    
+    {{ with .Site.Params.about.title }}<h3 id="about-me">{{ . }}</h3>{{ end }}
+
     <div class="face-lockup">
         <div class="face-img"></div>
         <div class="icon-pencil">
@@ -18,9 +18,11 @@
         </div>
     </div>
 
+    {{ with .Site.Params.about.bio }}
     <div class="blurb">
-        <p>{{ with .Site.Params.about.bio }}{{ . | markdownify }}{{ end }}</p>
+        <p>{{ . | markdownify }}</p>
     </div>
+    {{ end }}
 
     {{ with .Site.Params.about.skills }}
     <div class="skill-lockup">
