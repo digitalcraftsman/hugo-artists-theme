@@ -7,29 +7,10 @@ This Hugo theme features several content sections, like an about section  showin
 ![Hugo Artists Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/images/screenshot.png)
 
 
-## Contents
-
-- [Installation](#installation)
-- [Getting started](#getting-started)
-    - [The config file](#the-config-file)
-    - [Change the hero background](#change-the-hero-background)
-    - [Add your own logo](#add-your-own-logo)
-    - [Introduce yourself](#introduce-yourself)
-    - [Create your portfolio](#create-your-portfolio)
-    - [What your clients think](#what-your-clients-think)
-    - [Add social networks](#add-social-networks)
-    - [Make the contact form working](#make-the-contact-form-working)
-    - [Nearly finished](#nearly-finished)
-- [Contributing](#contributing)
-- [License](#license)
-- [Annotations](#annotations)
-
-
 ## Installation
 
 Inside the folder of your Hugo site run:
 
-    $ mkdir themes
     $ cd themes
     $ git clone https://github.com/digitalcraftsman/hugo-artists-theme
 
@@ -154,9 +135,9 @@ Since this page will be static, you can use [formspree.io](//formspree.io/) as p
 
 In order to see your site in action, run Hugo's built-in local server.
 
-    $ hugo server -w
+    $ hugo server
 
-Now enter `localhost:1313` in the address bar of your browser.
+Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
 
 ## Contributing
