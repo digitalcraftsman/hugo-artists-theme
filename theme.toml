@@ -5,7 +5,7 @@ description = "A one page portfolio for freelancers, programmers and designers."
 homepage = "//github.com/digitalcraftsman/hugo-artists-theme"
 tags = ["portfolio", "showcase", "skills", "clients", "contact form"]
 features = ["about section with skill rating", "stylish portfolio with slider", "carousel for client's quotes", "contact form"]
-min_version = 0.14
+min_version = 0.20
 
 [author]
   name = "digitalcraftsman"

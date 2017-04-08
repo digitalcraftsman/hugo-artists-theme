@@ -8,7 +8,7 @@
                 {{ with .Site.Params.clients.title }}<a href="#clients">{{ . }}</a>{{ end }}
                 {{ with .Site.Params.contact.title }}<a href="#contact">{{ . }}</a>{{ end }}
             </nav>
-            <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . }}{{ else }}All content copyright {{.Now.Format "2006"}} {{ end }}</p>
+            <p class="copyright">{{ with .Site.Params.footer.copyright }}{{ . }}{{ else }}All content copyright {{now.Format "2006"}} {{ end }}</p>
         </div>
     </div>
 </footer>
