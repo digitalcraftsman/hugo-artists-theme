@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}">
 <meta name="author" content="{{ with .Site.Params.name }}{{ . }}{{ end }}">
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 <title>{{ .Site.Title }}</title>
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/all.css">
 {{ "<!--[if lt IE 9]>" | safeHTML }}
