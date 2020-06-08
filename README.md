@@ -4,6 +4,8 @@ The Artists Theme is a one page portfolio for freelancers based on the original 
 
 This Hugo theme features several content sections, like an about section  showing the level of your skills, a responsive portfolio with hover effects, a gallery to present your client's opinions and a contact form.
 
+#### Please note that this theme is no longer maintained.
+
 ![Hugo Artists Theme screenshot](https://raw.githubusercontent.com/digitalcraftsman/hugo-artists-theme/master/images/screenshot.png)
 
 
